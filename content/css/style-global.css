@@ -1,0 +1,28 @@
+ *{
+    outline: none !important;
+    overflow-x: hidden !important;
+}
+
+
+/* ALTERANDO COR DA BARRA DE ROLAGEM */
+
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #3D4346; 
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #7D8183; 
+  border-radius: 20px;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+
+

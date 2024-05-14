@@ -1,0 +1,184 @@
+
+
+body{
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    background: rgb(73, 73, 73);
+        
+}
+
+
+.bg-video{
+    position: fixed;
+    left: -50%;
+    top: -100%;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 40%;
+    
+}
+
+.section-login{
+    display: block;
+    justify-content: center;
+
+}
+
+
+
+.bg-login{ 
+    width: 400px;
+    height: 320px;
+    border-radius: 5%;  
+    background: rgba(255, 255, 255, 0.11);
+    box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.068);
+    backdrop-filter: blur( 12.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 ); 
+    cursor: pointer; 
+    
+}
+
+
+
+#logo{
+    width: 250px;
+    height: 200px; 
+    margin: 0 0 10px -10px;
+    position:relative;
+    left: 20%;
+
+}
+
+
+
+.input-itens{
+    display: grid;
+    justify-content: center;
+    align-items: center; 
+}
+
+
+h2 {
+    font-family: biko;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+}
+
+a{
+    font-family: biko;
+    font-weight: 400;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.remember-password{
+    margin-top: 10px;
+}
+
+input[type=text], input[type=password]{
+    width: 90%;
+    height: 30px;
+    background: rgba(255, 255, 255, 0);
+    box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.068);
+    backdrop-filter: blur( 12.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-radius: 1%;  
+    color: #fff;    
+    padding: 5px 15px;
+    text-transform: uppercase;
+}
+
+
+input[type=text]::placeholder, input[type=password]::placeholder{
+    color: #c9c9c9;
+}
+
+
+input[type=submit] {background-image: linear-gradient(to right, #e53935 0%, #e35d5b  51%, #e53935  100%)}
+input[type=submit] { 
+   padding: 15px;  
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   border-radius: 6px;
+   width: 330px;      
+   border: 1px solid rgba( 255, 255, 255, 0.18 ); 
+   margin-top: 30px;
+   cursor: pointer;
+
+ }
+
+ input[type=submit]:hover {
+   background-position: right center; /* change the direction of the change here */  
+   text-decoration: none;
+ }
+
+
+
+
+
+ /* DERIVACAO MOBILE */
+
+ @media only screen and (max-width: 1024px){
+    
+
+    .bg-login{ 
+        width: 270px;
+        height: 320px;
+        padding: 0;
+         
+    }
+
+    input[type=text], input[type=password]{
+        width: 70%;
+        margin: 10px 25px;
+    }
+
+    input[type=submit]{
+        width: 80%;
+        margin: 20px 25px 10px 25px;
+    }
+
+    #logo{
+        width: 200px;
+        height: 150px; 
+        margin-bottom: 10px;  
+        left: 15%;
+    }
+
+
+    .input-itens{
+        display:block;
+        justify-content: center;
+        align-items: center; 
+    }
+
+
+    body{ 
+        background: url(/content/img/pasta-1181189_960_720.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+
+
+    .remember-password{
+        margin: 10px 25px;
+    }
+
+
+    .bg-video{
+      display: none;
+            
+    }
+}
