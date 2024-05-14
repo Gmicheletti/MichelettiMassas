@@ -11,59 +11,10 @@
 
  .logo-hero{
      width: 500px;
-     height: ;
+     height: auto;
      left: calc(50% - 250px);
      top: calc(50% - 191px);    
      position: absolute;
  }
 
-.section1{
-    height: 500px;
-}
 
-
-
-
-.section2{
-    height: 500px;
-    background-color: rgb(208, 205, 205);
-}
-
-.section3{
-    height: 500px;
-}
-
-
-
-/* DIVISOR DE FORMA */
-.custom-shape-divider-top-1693449246 {
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
-.custom-shape-divider-top-1693449246 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 150px;
-}
-
-.custom-shape-divider-top-1693449246 .shape-fill {
-    fill: rgb(255, 255, 255);
-}
-
- @media only screen and (max-width: 1024px){
-    
-
-    /* ---- HERO HOME MOBILE---- */
-    
-    .bg-video{
-        position: fixed;
-        left: -800px;
-        top: -300px;
-        min-width: 100%;
-        min-height: 100vh;    
-        
-    }
- }
