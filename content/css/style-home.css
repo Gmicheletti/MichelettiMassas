@@ -3,7 +3,6 @@
 /* ---- HERO HOME ---- */
 
 .bg-video{
-
     min-width: 100vw;
     height: 100vh;
     object-fit: cover;    
@@ -15,6 +14,21 @@
      left: calc(50% - 250px);
      top: calc(50% - 191px);    
      position: absolute;
+ }
+
+ @media (max-width: 1024px){
+    .logo-hero{
+        width: 60vw;
+        height: auto;
+        left: calc(50% - 30vw);
+        top: calc(50% - 191px);    
+        position: absolute;
+    }
+
+    .bg-video{
+        object-position: center;
+        margin-left: -450px;
+    }
  }
 
 

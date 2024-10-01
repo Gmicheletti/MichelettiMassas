@@ -23,24 +23,29 @@ body{
 }
 
 .section-login{
-    display: block;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
     justify-content: center;
-
+    align-items: center;
 }
 
 
 
 .bg-login{ 
     width: 400px;
-    height: 320px;
+    height: fit-content;
     border-radius: 5%;  
     background: rgba(255, 255, 255, 0.11);
     box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.068);
     backdrop-filter: blur( 12.5px );
     -webkit-backdrop-filter: blur( 13.5px );
     border: 1px solid rgba( 255, 255, 255, 0.18 ); 
-    cursor: pointer; 
-    
+    display: flex;
+    flex-direction: column;
+    row-gap: 0px;
+    padding: 20px;
 }
 
 
@@ -50,16 +55,7 @@ body{
     height: 200px; 
     margin: 0 0 10px -10px;
     position:relative;
-    left: 20%;
-
-}
-
-
-
-.input-itens{
-    display: grid;
-    justify-content: center;
-    align-items: center; 
+    left: calc(50% - 125px)
 }
 
 
@@ -77,13 +73,7 @@ a{
     text-decoration: none;
 }
 
-
-.remember-password{
-    margin-top: 10px;
-}
-
 input[type=text], input[type=password]{
-    width: 90%;
     height: 30px;
     background: rgba(255, 255, 255, 0);
     box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.068);
@@ -101,8 +91,6 @@ input[type=text]::placeholder, input[type=password]::placeholder{
     color: #c9c9c9;
 }
 
-
-input[type=submit] {background-image: linear-gradient(to right, #e53935 0%, #e35d5b  51%, #e53935  100%)}
 input[type=submit] { 
    padding: 15px;  
    text-align: center;
@@ -111,16 +99,19 @@ input[type=submit] {
    background-size: 200% auto;
    color: white;            
    border-radius: 6px;
-   width: 330px;      
+   width: 100%;      
    border: 1px solid rgba( 255, 255, 255, 0.18 ); 
-   margin-top: 30px;
    cursor: pointer;
-
+   background-image: linear-gradient(to right, #e53935 0%, #e35d5b  51%, #e53935  100%)
  }
 
  input[type=submit]:hover {
    background-position: right center; /* change the direction of the change here */  
    text-decoration: none;
+ }
+
+ .remember-password{
+    margin: 20px 0 20px 0;
  }
 
 
@@ -129,38 +120,21 @@ input[type=submit] {
 
  /* DERIVACAO MOBILE */
 
- @media only screen and (max-width: 1024px){
+ @media only screen and (width <= 1024px){
     
-
-    .bg-login{ 
-        width: 270px;
-        height: 320px;
-        padding: 0;
-         
-    }
-
     input[type=text], input[type=password]{
-        width: 70%;
-        margin: 10px 25px;
+        width: auto;
     }
 
     input[type=submit]{
-        width: 80%;
-        margin: 20px 25px 10px 25px;
+        width: 100%;
     }
 
     #logo{
         width: 200px;
         height: 150px; 
         margin-bottom: 10px;  
-        left: 15%;
-    }
-
-
-    .input-itens{
-        display:block;
-        justify-content: center;
-        align-items: center; 
+        left: calc(50% - 100px);
     }
 
 
@@ -168,7 +142,6 @@ input[type=submit] {
         background: url(/content/img/pasta-1181189_960_720.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        
     }
 
 
@@ -181,4 +154,18 @@ input[type=submit] {
       display: none;
             
     }
+}
+
+
+@media only screen and (width <= 767px){
+
+    .section-login{
+        padding: 20px;
+    }
+    
+
+    .bg-login{ 
+        width: 90%;
+    }
+
 }
