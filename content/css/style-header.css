@@ -39,14 +39,27 @@
 
  @media (max-width: 1024px){
 
-.logo-home{
-    width: 150px;
-    height: 90px;            
-    cursor: pointer;
+    .header{
+        padding: 10px 20px;
+    }
+
+    .logo-home{
+        width: 150px;         
+    }
+
+    .button-red{
+        font-size: 12px;
+    }
+
 }
 
-.button-red{
-    font-size: 12px;
-}
 
+@media (max-width: 767px){
+    .logo-home{
+        width: 80px;
+    }
+
+    .header{
+        padding: 10px;
+    }
 }
