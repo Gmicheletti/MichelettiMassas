@@ -1,6 +1,6 @@
 /* ---- HEADER ---- */
 .header{
-    width: 100%;
+    width: calc(100vw - 40px);
     height: 100px;
     z-index: 10;
     overflow-y: hidden;
@@ -8,32 +8,17 @@
     align-items: center;
     justify-content:space-between;
     position: fixed;
+    padding: 10px 20px;
 }
 
 .logo-home{
     height: 90px;
-    margin: 10px 0 0 50px;
     cursor: pointer;
     object-fit: contain;
 }
 
-.menu{
-    display: flex;
-    justify-content:flex-end;
-    align-items: center;
-    width: 500px;
-    margin-right: 100px;
-}
-
-
-li{
-    font-family: biko;
-    color: #fff;
-}
-
-
-.button-red{background-image: linear-gradient(to right, #e53935 0%, #952321  51%, #e53935  100%)}
 .button-red{ 
+    background-image: linear-gradient(to right, #e53935 0%, #952321  51%, #e53935  100%);
    padding: 10px 40px;  
    text-align: center;
    transition: 0.5s;
@@ -52,34 +37,16 @@ li{
  } 
 
 
- @media only screen and (max-width: 1024px){
+ @media (max-width: 1024px){
 
-
- /* ---- HEADER MOBILE---- */
- .header{
-    display: -webkit-box;
-}
 .logo-home{
     width: 150px;
     height: 90px;            
     cursor: pointer;
 }
 
-.menu{
-    width: 150px;
-    margin: 35px 0 0 0px;
-    justify-content: center;
-    position: absolute;
-    right: 20px;
-    
-}
-
-li{
-    display: none;
-}
-
 .button-red{
-    font-size: 10px;
+    font-size: 12px;
 }
 
 }
